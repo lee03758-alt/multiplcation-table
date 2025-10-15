@@ -6,28 +6,28 @@ function getColumnsDesired() {
     return parseInt(document.getElementById("cols").value)
 }
 
-function createWithFlexbox(rows,col) {
-    let string =''
+function createWithFlexbox(rows, cols) {
+    let string = ''
 
-    let row=1
-    do{
-        string += "<div class='rows'>"
+    // first do-while loop to build the flex'd rows
+    let row = 1
+    do {
+        string += "<div class='row'>"
         string += row
 
-        let cols = 1
-        do{
-            string += "<div class='cols'>"
-            string += row * cols
+        // second do-while loop to build the flex'd columns
+        let col = 1
+        do {
+            string += "<div class='col'>"
+            string += row * col
             string += "</div>"
 
             col = col + 1
-
-        } while(col <= cols);
+        } while (col <= cols)
         string += "</div>\n"
 
         row = row + 1;
-    }while (row <= rows);
+    } while (row <= rows)
 
-    document.getElementById('output').innerHTML = string
+    document.getElementById("output").innerHTML = string
 }
-
