@@ -1,3 +1,5 @@
-# Hello students 
+# What I learned  
+## I learned to generate rows and colums. I also learned some basic java coding like using different functions 
 
-### are you reaDy to learn 
+# What I found difficult 
+## 

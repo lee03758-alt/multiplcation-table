@@ -1,139 +1,40 @@
-/*section.container {*/
-/*    width: 70vw;*/
-/*    height: 100vh;*/
-/*    margin: 0 auto;*/
-/*    color: mediumpurple;*/
-/*    display: flex;*/
-/*    flex-direction: column;*/
-/*    align-items: center;*/
-/*    gap: 10px;*/
-
-/*    .generate-box {*/
-/*        display: flex;*/
-/*        gap: 10px;*/
-
-/*        .inputs {*/
-/*            display: flex;*/
-/*            flex-direction: column;*/
-/*            gap: 5px;*/
-
-/*            label {*/
-/*                display: flex;*/
-/*                gap: 10px;*/
-/*                justify-content: space-between;*/
-
-/*                button#generate.myBtn { !* has greatest specificity *!*/
-/*                    background-color: pink;*/
-/*                }*/
-/*            }*/
-/*        }*/
-/*    }*/
-
-/*    #output {*/
-/*        overflow: scroll;*/
-/*        max-width: 90vw;*/
-/*        max-height: 60vh;*/
-
-/*        table, th, tr, td {*/
-/*            border: 1px solid black;*/
-/*            border-collapse: collapse; !* Optional: to avoid double borders *!*/
-
-/*            tr:first-of-type,*/
-/*            tr:last-of-type {*/
-/*                background-color: lightblue;*/
-/*            }*/
-
-/*            .highlight {*/
-/*                background-color: darkred;*/
-/*                color: white;*/
-/*            }*/
-
-/*            td {*/
-/*                padding: 2px;*/
-/*                text-align: center;*/
-
-/*                &:first-of-type,*/
-/*                &:last-of-type {*/
-/*                    background-color: lightblue;*/
-/*                }*/
-/*            }*/
-/*        }*/
-
-/*        tr:hover {*/
-/*            background-color: yellow;*/
-/*        }*/
-/*    }*/
-
-/*}*/
-
-
 section.container {
     width: 70vw;
     height: 100vh;
     margin: 0 auto;
-    color: mediumpurple;
+
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
-}
 
+    .generate-box {
+        display: flex;
+        gap: 10px;
 
-section.container .generate-box {
-    display: flex;
-    gap: 10px;
-}
+        .inputs {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
 
-section.container .generate-box .inputs {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-}
+            label {
+                display: flex;
+                gap: 10px;
+                justify-content: space-between;
+            }
+        }
+    }
 
-section.container .generate-box .inputs label {
-    display: flex;
-    gap: 10px;
-    justify-content: space-between;
-}
+    #output {
+        border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
 
-section.container .generate-box .inputs label button#generate.myBtn {
-    background-color: pink;
-}
-
-section.container #output {
-    overflow: scroll;
-    max-width: 90vw;
-    max-height: 60vh;
-}
-
-section.container #output table,
-section.container #output th,
-section.container #output tr,
-section.container #output td {
-    border: 1px solid black;
-    border-collapse: collapse; /* Optional: to avoid double borders */
-}
-
-section.container #output tr:first-of-type,
-section.container #output tr:last-of-type {
-    background-color: lightblue;
-}
-
-section.container #output .highlight {
-    background-color: darkred;
-    color: white;
-}
-
-section.container #output td {
-    padding: 2px;
-    text-align: center;
-}
-
-section.container #output td:first-of-type,
-section.container #output td:last-of-type {
-    background-color: lightblue;
-}
-
-section.container #output tr:hover {
-    background-color: yellow;
+        .row {
+            display: flex;
+            justify-content: space-between;
+            gap: 5px;
+        }
+    }
 }
