@@ -5,5 +5,5 @@ I’ve learned some basic Java, like how to use different functions and tools in
 
 What I found difficult
 
-What i found difficult was
+
 One of the hardest parts for me was trying to remember everything I learned and then using it correctly while coding. It was challenging to take in all the new information and put it into practice at the same time.
